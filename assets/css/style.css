@@ -1,9 +1,152 @@
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'Karla-VariableFont';
+  src: url(../fonts/Karla/Karla-VariableFont_wght.ttf);
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  margin: 0 3%;
+  font-family: 'Karla-VariableFont';
+  color: #323A45; 
+}
+h1{
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+ul {
+  background-color: #323A45;
+  margin-bottom: 2rem;
+  color: #DEDEDE;
+}
+li {
+  list-style: none;
+  text-align: right;
+  
+  padding-right: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #323A45; 
+}
+a:hover{
+  opacity: 0.5;
+}
+header a{
+  color: #DEDEDE;
+}
+header a h1{
+  color: #323A45;
+}
+.angebot{
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+}
+.angebot a{
+  grid-column: 1 / 3;
+}
+img{
+  width: 100%;
+}
+.artikelname{
+  font-family: 'Karla-VariableFont';
+  font-size: 1rem;
+  padding: 1rem 0 0.3rem 0;
+}
+.hersteller{
+  color: #848484;
+  margin-bottom: 2.5rem;;
+}
+.preis{
+  text-align: right;
+  padding: 1rem 0 0.3rem 0;
+}
+
+footer h2{
+  font-size: 1.5rem;
+  padding: 2.5rem 0;
+}
+footer span{
+  font-weight: bold;
+}
+footer a{
+  font-weight: bold;
+}
+.footprint {
+  color: #848484;
+  padding: 2.5rem 0 1rem 0;
+}
+/* ============================================== */
+@media  screen and (min-width: 576px) {
+  body {
+    margin: 0 10%;
+  }
+header{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 2rem 0;
+}
+header a h1{
+  grid-column: 1 / 2;
+  font-size: 1rem;
+  text-align: left;
+  
+}
+header ul{
+  grid-column: 2 / 3;
+  background: none;
+  text-align: right;
+  color: #323A45; 
+}
+header li{
+  display: inline;
+  font-size: 0.8rem;
+  padding: 0 0 0 2rem;
+}
+header a{
+  color: #323A45; 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.container .angebot:nth-of-type(1){
+  grid-column: 1 / 4;
+}
+.hersteller{
+  margin-bottom: 1rem;;
+}
+
+
+footer {
+  margin-top: 2rem;
+}
+.footergrid{
+  display: grid;
+  grid-template-columns: 30% 20% 30% 20%;
+  gap: 2rem;
+}
+.ds{
+  grid-column: 1 / 2;
+}
+.kontakt{
+  grid-column: 2 / 3;
+}
+.nl{
+  grid-column: 3 / 4;
+}
+.finden{
+  grid-column: 4 / 5;
+}
+footer h2{
+  font-size: 1rem;
+}
 }
